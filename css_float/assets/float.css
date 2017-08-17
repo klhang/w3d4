@@ -23,7 +23,9 @@ ul li a, figcaption a {
 /* This selector selects only IMMEDIATE (1 level deep) image element children
 of the header element */
 header > img {
+
   width: 100px;
+  float: left;
 }
 
 /* Selects all elements with the class attribute "ingredients-list" */
@@ -73,11 +75,13 @@ h2 + .user_review {
 }
 
 nav {
-    display: inline-block;
+    float: right;
+    /*clear: both;*/
 }
 
 nav ul li {
     display:  inline-block;
+
 }
 
 nav ul li a {
@@ -97,9 +101,11 @@ section {
 }
 
 aside {
+    content: "";
     width: 180px;
     margin-right: 15px;
-    display: inline-block;
+    display: block;
+    clear: both;
 }
 
 .ingredients-list li {
@@ -123,4 +129,3 @@ textarea {
 label {
   display: block;
 }
-
